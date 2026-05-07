@@ -1,4 +1,4 @@
-from utils import load_data
+from src.utils import load_data
 
 
 def test_load_data():

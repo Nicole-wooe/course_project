@@ -1,7 +1,7 @@
 import json
 from datetime import datetime
 
-from services import get_cards, get_top_transactions
+from src.services import get_cards, get_top_transactions
 
 
 def get_greeting(date_time: str) -> str:

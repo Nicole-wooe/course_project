@@ -41,3 +41,4 @@ course_project/
 ```bash
 pip install pandas pytest
 ```
+## ✔️ Final update for PR
