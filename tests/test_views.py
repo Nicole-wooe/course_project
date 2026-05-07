@@ -1,11 +1,6 @@
-import sys
-from pathlib import Path
-
 import pandas as pd
 
-sys.path.append(str(Path(__file__).resolve().parent.parent / "src"))
-
-from views import get_greeting, home_page
+from src.views import get_greeting, home_page
 
 
 def test_get_greeting_morning():
@@ -22,6 +17,7 @@ def test_get_greeting_evening():
 
 def test_get_greeting_night():
     assert get_greeting("2021-12-31 02:00:00") == "Доброй ночи"
+
 
 def test_home_page():
     df = pd.DataFrame({

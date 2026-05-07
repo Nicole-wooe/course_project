@@ -1,11 +1,6 @@
-import sys
-from pathlib import Path
-
 import pandas as pd
 
-sys.path.append(str(Path(__file__).resolve().parent.parent / "src"))
-
-from reports import spending_by_category
+from src.reports import spending_by_category
 
 
 def test_spending_by_category():

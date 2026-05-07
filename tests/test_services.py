@@ -1,11 +1,6 @@
-import sys
-from pathlib import Path
-
 import pandas as pd
 
-sys.path.append(str(Path(__file__).resolve().parent.parent / "src"))
-
-from services import get_cards, get_top_transactions
+from src.services import get_cards, get_top_transactions
 
 
 def test_get_top_transactions():
